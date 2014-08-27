@@ -35,3 +35,15 @@ Available Dockerfile(s)
 -----------------------
 
 1. rbenv
+  TODO
+1. rails
+  Extends the rails:latest
+  Includes the following items:
+  * Created user account
+  * Default change changed to user's home
+  * Installed editor (vim) and vcs (git)
+  * Default ```docker run``` state return's bash.
+  Use case
+  ```sh
+  docker run -v /home/hallaj:/home/hallaj -i -t rails/hallaj
+    ```
