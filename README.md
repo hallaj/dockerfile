@@ -37,8 +37,10 @@ Available Dockerfile(s)
 1. rbenv
   * TODO
 1. rails
-  * Extends the rails:latest
+  * Extends the ubuntu:latest
   * Includes the following items:
+    * Installed rbenv
+    * Installed rails
     * Created user account
     * Default change changed to user's home
     * Installed editor (vim) and vcs (git)
@@ -47,3 +49,4 @@ Available Dockerfile(s)
   ```sh
   docker run -v /home/hallaj:/home/hallaj -i -t rails/hallaj
   ```
+  * Ensure you comment out 'therubyracer' after creating a new application
