@@ -1,0 +1,3 @@
+[submodule "chruby"]
+	path = chruby
+	url = https://github.com/hallaj/dockerfile_chruby
